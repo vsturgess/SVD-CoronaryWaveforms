@@ -188,6 +188,7 @@ yaxis_label_lookup = {
 
 # Dash app
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
+server = app.server
 app.title = "Pig Signal Viewer"
 
 app.layout = html.Div([ 
@@ -753,3 +754,4 @@ def update_plot(T,selected_pigs, a, b, c, d, e, m1, d1, m2, d2,CT):
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+
